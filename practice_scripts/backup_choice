@@ -1,0 +1,22 @@
+#!/bin/bash
+# Aurthor : Sumit pawar
+# Created date : 26 April 2020
+# Modified date : 26 April 2020
+# Description : This Script check backup system based on day of weeks
+
+echo
+echo The script begins from here, please verify the inputs
+echo
+echo what is the day Today...?
+echo
+read day
+echo
+	shopt -s nocasematch		#To disbale case sensitivity of user input
+	case $day in
+	Mon) echo Need full backup;;
+	Tue|Wed|Thu|Fri) echo Partial backup;;
+	Sat|Sun) echo No back required;;
+	*) echo Invalid input--bye;;
+	esac
+echo
+echo Script ends here

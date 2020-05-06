@@ -1,0 +1,19 @@
+#!/bin/bash
+# Author : Sumit pawar
+# Created date : 26 April 2020
+# Description : This script will reverse the name of each file and rename it
+
+
+echo
+echo Script begins from there
+echo
+	for i in $1
+	do
+	num1=$(echo $i | cut -d '#' -f 2)
+	num2=$(echo $i | cut -d '#' -f 1) 
+	echo $num1
+	echo $num2
+	mv $i "$num1"+"$num2"
+	done
+echo
+echo Script ends here

@@ -1,0 +1,25 @@
+#!/bin/bash
+# Aurthor : Sumit Pawar
+# Created date : 26 april 2020
+# Modified date : 26 April 2020
+# Decription : This script will task assignment by using if else
+
+echo
+echo Script begins from here.
+echo
+echo what i have to do today.....?
+echo
+day=`date +%A`
+#day='Sunday'
+echo
+	if [ "$day" == 'Sunday' ]
+	then
+		echo hey Today is Sunday.....not need to do work today.....just chill..!
+	elif [ "$day" == 'Saturday' ]
+	then
+		echo Need to work for half day as its weekend....!
+	else
+		echo You need to work as its working day...!
+	fi
+echo
+echo Script ends here

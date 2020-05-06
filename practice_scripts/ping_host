@@ -1,0 +1,15 @@
+#!/bin/bash
+# Author : Sumit Pawar
+# Created Date : 3 April 2020
+# Description : This Script will check status of remote host IP from our machine
+# Modified Date : 3 April 2020
+
+echo Script begins frm here
+echo
+ping -c1 192.168.31.1
+	if [ $? -eq 0 ]
+	then
+	echo OK
+	else
+	echo NOT OK
+	fi

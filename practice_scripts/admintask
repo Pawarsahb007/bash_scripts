@@ -1,0 +1,19 @@
+#!/bin/bash
+# Aurthor : Sumit pawar
+# Created date : 22 April 2020
+# Modified date : 22 April 2020
+# Description : Performaing Admin task to check the health status of system
+
+echo This script begin from here and started admin task
+echo
+echo 
+top | head -10
+echo
+df -h
+echo
+free -m
+echo
+uptime
+echo
+iostat
+echo

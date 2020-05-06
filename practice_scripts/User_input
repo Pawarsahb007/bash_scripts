@@ -1,0 +1,26 @@
+#!/bin/bash
+# Aurthor : Sumit pawar
+# Created date : 26 April 2020
+# Modified date : 26 April 2020
+# Description : This script will take user input and will perform action according to it
+
+echo
+echo Script will begin from there, please select the approprite action based on requirement.
+echo
+echo select a for check the date of today
+echo select b for check free memory
+echo select c for top 10 process
+echo select d for current working directory
+echo
+read choice
+echo
+	case $choice in
+	a) date;;
+ 	b) free -m;;
+	c) top | head -10;;
+	d) pwd;;
+	*) echo Invalid choice-bye
+	esac
+echo
+echo Script ends here...Thanks for your input
+

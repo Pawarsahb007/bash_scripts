@@ -1,0 +1,22 @@
+#!/bin/bash
+# Aurthor : Sumit pawar
+# Create Date : 26 April 2020
+# Modified Date : 26 April 2020
+# Description : This script will use fro conditional statement excution by if else
+
+echo
+echo Script begin from here please provide reuired inputs......!
+echo
+echo what is day today..?
+read day
+
+	if [ "$day" == 'Sunday' ]
+	then
+		echo hurray....! today is Sunday......we have to party today.....!
+	else
+		echo sorry.....!I am working today.
+	fi
+echo
+echo Script ends here.......!
+
+

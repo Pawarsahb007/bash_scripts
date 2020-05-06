@@ -1,0 +1,28 @@
+#!/bin/bash
+# Aurthor : Sumit pawar
+# Date : 22 April 2020
+# Description : Getting input from user to perform any task or echo values
+# Modified date : 22 April 2020
+
+echo Script begins from here and Please provide asking inputs
+echo
+echo What is your name...?
+read a
+echo what is your profession...?
+read b
+echo
+echo What type of food you like....?
+read c
+echo
+echo what for you looking here...?
+read d
+echo
+echo Hello $a, Very nice to meet you.
+echo
+echo Wow,you are such in a great profession $b.
+echo
+echo Your food $c is also quiet intersting.
+echo
+echo Please find the details of $d `$d`
+echo
+echo Script is ending here.
